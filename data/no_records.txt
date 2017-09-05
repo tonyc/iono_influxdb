@@ -1,0 +1,17 @@
+:Product: Boulder_iono.txt
+:Issued: 2016 Jun 21 0055 UTC
+# Prepared by the U.S. Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Please send comments and suggestions to SWPC.Webmaster@noaa.gov 
+# 
+# Units for foF2, MUF(D), foEs, foE, fMUF, foF1, fxI & fbEs = MHz
+# Units for yF2, D, hmE, h'F, h' & hmF2 = km
+# Units for TEC = 10^16 el/m^2  
+# Missing data: -1.0,-1,-1.00
+#
+#       Real-Time Ionosonde Data
+#       Boulder N40E255 AFRL-DGS-256
+# 
+# UT Date   Time
+# YR MO DA  HHMM    foF2 hmF2 MUF(D) D  h'F yF2 fMUF  h'  fxI foF1  foE hmE foEs fbEs  ITEC
+#-------------------------------------------------------------------------------------------
+No data available.
