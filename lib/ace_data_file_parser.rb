@@ -1,8 +1,10 @@
 class AceDataFileParser
 
-  def initialize(io, parser_class)
+  def initialize(io, parser_class, options = {})
     @io = io
     @parser_class = parser_class
+
+    @include_all = !!options[:include_all]
   end
 
   def each
@@ -11,13 +13,19 @@ class AceDataFileParser
     @io.read.each_line do |line|
       next if comment?(line)
 
-      yield @parser_class.from_data_file_line(line)
+      record = @parser_class.from_data_file_line(line)
+
+      yield record if record.nominal? || include_all?
     end
   end
 
   private
   def comment?(line)
     line =~ /\A[#:]/
+  end
+
+  def include_all?
+    @include_all
   end
 
 end
